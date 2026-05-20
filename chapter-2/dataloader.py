@@ -46,23 +46,23 @@ with open("the-verdict.txt", "r", encoding="utf-8") as f:
 
 
 dataloader = create_dataloader_v1(
-    raw_text, batch_size=8, max_length=4, stride=1, shuffle=False
+    raw_text, batch_size=6, max_length=4, stride=2, shuffle=False
 )
 
-print("First input_id:target_id ", dataloader.dataset.input_ids[0], dataloader.dataset.target_ids[0])
-print("Second input_id:target_id ", dataloader.dataset.input_ids[1], dataloader.dataset.target_ids[1])
+#print("First input_id:target_id ", dataloader.dataset.input_ids[0], dataloader.dataset.target_ids[0])
+#print("Second input_id:target_id ", dataloader.dataset.input_ids[1], dataloader.dataset.target_ids[1])
 
 data_iter = iter(dataloader)
 first_batch = next(data_iter)
 
-print("First batch:")
-print(first_batch)
-
-print("-------")
-print("Second batch:")
-
-second_batch = next(data_iter)
-print(second_batch)
+#print("First batch:")
+#print(first_batch)
+#
+#print("-------")
+#print("Second batch:")
+#
+#second_batch = next(data_iter)
+#print(second_batch)
 
 
 # dataloader = create_dataloader_v1(

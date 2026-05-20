@@ -54,4 +54,4 @@ d_in = inputs.shape[1] # 3
 d_out = 2
 sa_v1 = SelfAttention_v2(d_in, d_out)
 sa_v1(inputs)
-# print(sa_v1(inputs))
+#print(sa_v1(inputs))
