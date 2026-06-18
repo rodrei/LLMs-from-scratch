@@ -220,3 +220,5 @@ __marimo__/
 __pycache__
 
 chapter-5/gpt2
+chapter-7/gpt2
+chapter-7/model_and_optimizer.pth
